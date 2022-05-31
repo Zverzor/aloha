@@ -13,6 +13,26 @@
             document.documentElement.classList.add(className);
         }));
     }
+    let isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+        }
+    };
     let bodyLockStatus = true;
     let bodyLockToggle = (delay = 500) => {
         if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else bodyLock(delay);
@@ -51,7 +71,7 @@
             }), delay);
         }
     };
-    const menuBody = document.querySelector(".header__list");
+    const menuBody = document.querySelector(".header__nav");
     function menuInit() {
         if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
             if (bodyLockStatus && e.target.closest(".icon-menu")) {
@@ -70,6 +90,16 @@
             }));
         }
     }), 0);
+    if (isMobile.any()) {
+        document.body.classList.add("_touch");
+        let menuArrows = document.querySelectorAll(".header__arrow");
+        if (menuArrows.length > 0) for (let index = 0; index < menuArrows.length; index++) {
+            const menuArrow = menuArrows[index];
+            menuArrow.addEventListener("click", (function(e) {
+                menuArrow.parentElement.classList.toggle("_active");
+            }));
+        }
+    } else document.body.classList.add("_pc");
     window["FLS"] = true;
     isWebp();
     menuInit();

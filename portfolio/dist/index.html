@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220531125949">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220531184828">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +18,23 @@
 			<div class="header__container">
 
 				<div class="header__body">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="header__nav">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
+
 						<ul class="header__list">
 							<li class="header__item"><a href="#" class="header__link">Обои</a></li>
 							<li class="header__item"><a href="#" class="header__link">О компании</a></li>
 							<li class="header__item"><a href="#" class="header__link">Сотрудничество</a></li>
 							<li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
-							<li class="header__item"><a href="#" class="header__link">Побробнее</a></li>
+							<li class="header__item"><a href="#" class="header__link">Побробнее</a>
+								<span class="header__arrow"></span>
+								<ul class="header__sub-list">
+									<li class="sub-list-header__item"><a href="#" class="sub-list-header__link">Производство</a></li>
+									<li class="sub-list-header__item"><a href="#" class="sub-list-header__link">Вопрос-ответ</a></li>
+									<li class="sub-list-header__item"><a href="#" class="sub-list-header__link">Гарантии и возврат</a>
+									</li>
+								</ul>
+							</li>
 							<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
 						</ul>
 					</nav>
@@ -33,15 +42,6 @@
 				</div>
 			</div>
 		</header>
-
-		<div class="header__menu menu">
-
-			<nav class="menu__body">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="" class="menu__link"></a></li>
-				</ul>
-			</nav>
-		</div>
 		<div class="top">
 			<div class="top__container">
 				<div class="top__body">
@@ -76,6 +76,364 @@
 			</div>
 		</div>
 		<main class="page">
+			<div class="about">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__title">
+							<h2>О компании</h2>
+						</div>
+						<div class="about__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+								dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+								lacus vel facilisis. Lorem ipsum dolo
+								r sit amet, consectetur adipiscing e
+								lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ult
+								rices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse
+								ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+						</div>
+						<div class="about__row row-about">
+							<div class="row-about__body">
+								<div class="row-about__item item-about">
+									<div class="item-about__body">
+										<div class="item-about__image"><img src="img/about/about01.png" alt=""></div>
+										<div class="item-about__label">
+											<h4>Гарантия более 15 лет</h4>
+										</div>
+										<div class="item-about__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ultrices gravida. Risus </p>
+										</div>
+									</div>
+								</div>
+								<div class="row-about__item item-about">
+									<div class="item-about__body">
+										<div class="item-about__image"><img src="img/about/about02.png" alt=""></div>
+										<div class="item-about__label">
+											<h4>Срок изготовления</h4>
+										</div>
+										<div class="item-about__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ultrices gravida. Risus </p>
+										</div>
+									</div>
+								</div>
+								<div class="row-about__item item-about">
+									<div class="item-about__body">
+										<div class="item-about__image"><img src="img/about/about03.png" alt=""></div>
+										<div class="item-about__label">
+											<h4>Экологичность</h4>
+										</div>
+										<div class="item-about__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ultrices gravida. Risus </p>
+										</div>
+									</div>
+								</div>
+								<div class="row-about__item item-about">
+									<div class="item-about__body">
+										<div class="item-about__image"><img src="img/about/about04.png" alt=""></div>
+										<div class="item-about__label">
+											<h4>Индивидуальный
+												подход</h4>
+										</div>
+										<div class="item-about__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ultrices gravida. Risus </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="types">
+				<div class="types__container">
+					<div class="types__body">
+						<div class="types__title">
+							<h2>Виды натяжки</h2>
+						</div>
+						<div class="types__row row-types">
+							<div class="row-types__item item-types">
+								<div class="item-types__body">
+									<div class="item-types__label">
+										<h3>Галерейная натяжка</h3>
+									</div>
+									<div class="item-types__image"><img src="img/types/types_gallery.png" alt=""></div>
+								</div>
+							</div>
+							<div class="row-types__item item-types">
+								<div class="item-types__body">
+									<div class="item-types__label">
+										<h3>Натяжка под раму</h3>
+									</div>
+									<div class="item-types__image"><img src="img/types/types_frame.png" alt=""></div>
+								</div>
+							</div>
+							<div class="row-types__item item-types">
+								<div class="item-types__body">
+									<div class="item-types__image"><img src="img/types/holst.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="material">
+				<div class="material__container">
+					<div class="material__body">
+						<div class="material__title">
+							<h2>Материалы</h2>
+						</div>
+						<div class="material__row row-material">
+							<div class="row-material__item item-matreial">
+								<div class="item-matreial__body">
+									<div class="item-matreial__image"><img src="img/material/material01.png" alt=""></div>
+									<div class="item-matreial__infoblock">
+										<div class="item-matreial__label">
+											<h3>Деревянный подраменик</h3>
+										</div>
+										<div class="item-matreial__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+												maecenas accumsan lacus vel facilisis. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-material__item item-matreial">
+								<div class="item-matreial__body">
+									<div class="item-matreial__image"><img src="img/material/material02.png" alt=""></div>
+									<div class="item-matreial__infoblock">
+										<div class="item-matreial__label">
+											<h3>Фурнитура «Крокодил»</h3>
+										</div>
+										<div class="item-matreial__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+												maecenas accumsan lacus vel facilisis. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-material__item item-matreial">
+								<div class="item-matreial__body">
+									<div class="item-matreial__image"><img src="img/material/material03.png" alt=""></div>
+									<div class="item-matreial__infoblock">
+										<div class="item-matreial__label">
+											<h3>Хлопковый холст</h3>
+										</div>
+										<div class="item-matreial__text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+												maecenas accumsan lacus vel facilisis. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="price">
+				<div class="price__container">
+					<div class="price__body">
+						<div class="price__title">
+							<h2>Размеры</h2>
+						</div>
+						<div class="price__row row-price">
+							<div class="row-price__item item-price item-price-f">
+								<div class="item-price__body item-price-f">
+									<div class="item-price__image"><img src="img/price/guys.png" alt="guys"></div>
+								</div>
+							</div>
+							<div class="row-price__item item-price item-price-s">
+								<div class="item-price__body item-price-s">
+									<div class="item-price__image"><img src="img/price/frames.png" alt="guys"></div>
+								</div>
+							</div>
+							<div class="row-price__item item-price item-price-t">
+								<div class="item-price__body item-price-t">
+									<div class="item-price__label item-price-t">
+										<h3>Цены на печать:</h3>
+									</div>
+									<div class="item-price__prices item-price-t">
+										<p>20х20 - 1000р</p>
+										<p>20х30 - 1000р</p>
+										<p>30х40 - 1000р</p>
+										<p>40х40 - 1000р</p>
+										<p>40х60 - 1000р</p>
+										<p>50х60 - 1000р</p>
+										<p>50х70 - 1000р</p>
+										<p>60х90 - 1000р</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="contact__container">
+					<div class="contact__body">
+						<div class="contact__title">
+							<h2>Этапы работы</h2>
+						</div>
+						<div class="contact__row row-contact">
+							<div class="row-contact__col col-contact-l">
+								<div class="col-contact__body">
+									<div class="col-contact__item item-contact1">
+										<div class="item-contact__body">
+											<div class="item-contact__label">
+												<h3>Выбор изображения и
+													размера</h3>
+											</div>
+											<div class="item-contact__text">
+												<p>Вы можете:</p>
+												<p>- Выбрать изображение из нашего каталога (ссылка на каталог)
+												</p>
+												<p>- Предоставить свою фотографию.
+													Рекомендуемое разрешение не менее
+													2000 pxl </p>
+												<p> - Выбрать интересующий вас размер</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-contact__item item-contact2">
+										<div class="item-contact__body">
+											<div class="item-contact__label">
+												<h3>Выбор изображения и
+													размера</h3>
+											</div>
+											<div class="item-contact__text">
+												<p>Согласование макета</p>
+												<p>- Менеджер в кротчайшие сроки подготовит
+													макет и вышлет Вам на согласование + "Заказ
+													клиента" для оплаты.
+												</p>
+												<p>- После согласования правки не принимаются.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-contact__item item-contact3">
+										<div class="item-contact__body">
+											<div class="item-contact__label">
+												<h3>Печать и готовность</h3>
+											</div>
+											<div class="item-contact__text">
+												<p>- Печать и подготовка картины занимает
+													2-3 дня. </p>
+												<p>- После с вами связывается менеджер и
+													сообщает о готовности.
+												</p>
+												<p>- Обращаем ваше внимание что фотопередача
+													при печати может отличатся незначительно и
+													это не является браком.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-contact__col col-contact-m">
+								<div class="col-contact__body col-contact-m">
+									<div class="col-contact__elipse col-elipse1">1</div>
+									<div class="col-contact__elipse col-elipse2">2</div>
+									<div class="col-contact__elipse col-elipse3">3</div>
+									<div class="col-contact__elipse col-elipse4">4</div>
+									<div class="col-contact__elipse col-elipse5">5</div>
+									<div class="col-contact__elipse col-elipse6">6</div>
+								</div>
+							</div>
+							<div class="row-contact__col col-contact-r">
+								<div class="col-contact__body">
+									<div class="col-contact__item item-contact4">
+										<div class="item-contact__body">
+											<div class="item-contact__label">
+												<h3>Оформление заявки</h3>
+											</div>
+											<div class="item-contact__text">
+												<p>- Через форму обратной связи на сайте: Приложите
+													ссылку на вашу фотографию, холст и размер
+													картины. Не забудьте указать ваши
+													контактные данные</p>
+												<p>- Отправить письмо на market@fotostena74.ru В
+													письме указать ссылку на фото, холст и размер
+													картины. Не забудьте указать ФИО и
+													контактные данные.
+												</p>
+												<p>- Отправить письмо на market@fotostena74.ru В
+													письме указать ссылку на фото, холст и размер
+													картины. Не забудьте указать ФИО и
+													контактные данные.</p>
+												<p>- Заявку можно оформить через Whats App
+													8-900-095-60-21</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-contact__item item-contact5">
+										<div class="item-contact__body">
+											<div class="item-contact__label">
+												<h3>Оплата</h3>
+											</div>
+											<div class="item-contact__text">
+												<p>- Оплата 100%</p>
+												<p>- Вы можете оплатить заказ лично по двум
+													адресам Карла Маркса 28 (рынок пешеходный)
+													и Линейная 94.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-contact__item item-contact6">
+										<div class="item-contact__body">
+											<div class="item-contact__label">
+												<h3>Самовывоз и доставка</h3>
+											</div>
+											<div class="item-contact__text">
+												<p>- Получить заказ вы можете по двум адресам:
+													Карла Маркса 28а Линейная 94. </p>
+												<p>- В другие города мы отправляем заказ транспортной
+													компанией за счет клиента или через пункты выдачи
+													OZON.
+												</p>
+												<p>- Стоимость нашей доставки по городу 700р.</p>
+												<p>- Вы можете оформить Яндекс Доставку. Перед
+													доставкой мы высылаем вам фотоотчет закза.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact__label">
+							<h2>Свяжитесь с нами</h2>
+						</div>
+						<div class="contact__form form-contact">
+							<div class="form-contact__body">
+								<div class="form-contact__col col-form">
+									<div class="col-form__body">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ФИО" class="col-form__name">
+										<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Почта" class="col-form__email">
+										<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" class="col-form__phone">
+										<div class="col-form__checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox__label"><span class="checkbox__text"> Lorem ipsum dolor sit
+													amet,
+													consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+													lacus vel facilisis. </span></label>
+										</div>
+									</div>
+								</div>
+								<div class="form-contact__col col-form">
+									<div class="col-form__body">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Размеры картины" class="col-form__size">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Загрузить изображение/фото (артикул/ссылка)" class="col-form__load">
+										<textarea name="col-form__comment" id="" cols="30" rows="10" placeholder="Комментарии"></textarea>
+										<button type="submit" class="col-form__button">Связаться</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -92,7 +450,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220531125949"></script>
+	<script src="js/app.min.js?_v=20220531184828"></script>
 </body>
 
 </html>
