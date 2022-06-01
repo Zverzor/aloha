@@ -858,6 +858,7 @@ body._touch .header__item._active .header__arrow {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 5rem;
+  margin-bottom: 9.1875rem;
 }
 
 .price__title h2 {
@@ -940,12 +941,12 @@ body._touch .header__item._active .header__arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 6.625rem;
 }
 
 .contact__title h2 {
   font-size: 3.625rem;
   font-weight: 700;
-  margin-top: 9.1875rem;
   margin-bottom: 1.6875rem;
 }
 
@@ -1305,7 +1306,6 @@ body._touch .header__item._active .header__arrow {
 }
 
 .rate__title {
-  margin-top: 6.625rem;
   font-size: 3.625rem;
   font-weight: 700;
 }
@@ -2424,12 +2424,16 @@ button.swiper-pagination-bullet {
     width: 90%;
   }
 
+  .price__body {
+    margin-bottom: 5.625rem;
+  }
+
   .item-price__body.item-price-f {
     margin-top: -100px;
   }
 
-  .contact__title h2 {
-    margin-top: 5.625rem;
+  .contact__body {
+    margin-bottom: 5rem;
   }
 
   .col-contact__item.item-contact1 {
@@ -2493,8 +2497,12 @@ button.swiper-pagination-bullet {
     margin-right: -250px;
   }
 
-  .contact__title h2 {
-    margin-top: 3.75rem;
+  .price__body {
+    margin-bottom: 3.75rem;
+  }
+
+  .contact__body {
+    margin-bottom: 3.125rem;
   }
 
   .rate {
