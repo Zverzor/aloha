@@ -2050,6 +2050,61 @@ body._touch .header__item._active .header__arrow {
   border: 1px solid #eee;
 }
 
+.production__body {
+  margin-top: 9.375rem;
+  margin-bottom: 12.5rem;
+}
+
+.production__linktree {
+  font-size: 1.3125rem;
+  opacity: 0.5;
+}
+
+.production__title {
+  margin-top: 2.875rem;
+  text-align: center;
+}
+
+.production__title h1 {
+  font-size: 3.625rem;
+  font-weight: 700;
+}
+
+.production__text {
+  margin-top: 1.875rem;
+}
+
+.production__text p {
+  margin-bottom: 0.9375rem;
+}
+
+.production__text p:last-child {
+  margin-bottom: 0rem;
+}
+
+.production__text ul {
+  margin-bottom: 0.9375rem;
+}
+
+.production__imageblock {
+  margin-top: 3.75rem;
+  width: 100%;
+  margin-bottom: 3.75rem;
+}
+
+.imageblock-production__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imageblock-production__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -3246,6 +3301,10 @@ button.swiper-pagination-bullet {
   .faq__body {
     margin-bottom: 15.625rem;
   }
+
+  .production__body {
+    margin-bottom: 15.625rem;
+  }
 }
 
 @media (max-width: 43.75em) {
@@ -3571,6 +3630,14 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 3.125rem;
+  }
+
+  .cooperation__title h1 {
+    font-size: 2.8125rem;
+  }
+
+  .production__title h1 {
+    font-size: 2.8125rem;
   }
 }
 
