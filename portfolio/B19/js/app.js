@@ -3415,7 +3415,7 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 0,
-            autoHeight: true,
+            autoHeight: false,
             speed: 800,
             pagination: {
                 el: ".swiper-pagination",
@@ -3427,7 +3427,7 @@
             },
             on: {}
         });
-        if (document.querySelector(".swiper-wrapper")) new core(".swiper-wrapper", {
+        if (document.querySelector(".swiper-main")) new core(".swiper-main", {
             modules: [ Navigation, Pagination ],
             observer: true,
             observeParents: true,
@@ -3436,12 +3436,12 @@
             autoHeight: true,
             speed: 800,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-main-pagination",
                 clickable: true
             },
             navigation: {
-                prevEl: ".swiper-button-prev",
-                nextEl: ".swiper-button-next"
+                prevEl: ".swiper-main-next",
+                nextEl: ".swiper-main-next"
             },
             on: {}
         });
