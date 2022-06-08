@@ -3427,21 +3427,31 @@
             },
             on: {}
         });
-        if (document.querySelector(".swiper-main")) new core(".swiper-main", {
-            modules: [ Navigation, Pagination ],
+        if (document.querySelector(".swiper-eagle")) new core(".swiper-eagle", {
+            modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 0,
-            autoHeight: true,
+            autoHeight: false,
             speed: 800,
-            pagination: {
-                el: ".swiper-main-pagination",
-                clickable: true
-            },
-            navigation: {
-                prevEl: ".swiper-main-next",
-                nextEl: ".swiper-main-next"
+            breakpoints: {
+                350: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                1268: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                }
             },
             on: {}
         });
