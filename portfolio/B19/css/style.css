@@ -3584,6 +3584,11 @@ button.swiper-pagination-bullet {
 
   .item-benefista__list::before {
     height: 31.25rem;
+    bottom: 28.5px;
+  }
+
+  .item-benefista__list {
+    padding-right: 1.5625rem;
   }
 }
 
