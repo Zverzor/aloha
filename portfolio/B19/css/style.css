@@ -3690,6 +3690,98 @@ h6 {
           transform: rotate(180deg);
 }
 
+.tope__body {
+  line-height: 1.21875;
+}
+
+.tope__title {
+  margin-top: 1.875rem;
+  margin-left: 1.875rem;
+}
+
+.tope__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -5.53125rem;
+}
+
+.tope__text {
+  margin-top: 6.875rem;
+  max-width: 675px;
+  position: relative;
+  z-index: 2;
+}
+
+.tope__image {
+  position: relative;
+  z-index: 2;
+  margin-right: -6.25rem;
+}
+
+.tope__label {
+  padding: 1.25rem 0rem;
+  background-color: #FFD600;
+  max-width: 656px;
+  position: relative;
+  font-weight: 700;
+  margin-top: -9.8125rem;
+}
+
+.tope__label::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 1000vmax;
+  height: 100%;
+  background-color: #FFD600;
+  z-index: -1;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.infoe {
+  background-image: url(../img/infoe/background.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infoe__body {
+  line-height: 1.21875;
+  padding-top: 3.125rem;
+}
+
+.infoe__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 2.5rem;
+}
+
+.row-infoe__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 650px;
+          flex: 0 0 650px;
+}
+
+.row-infoe__item:first-child {
+  margin-right: 1.875rem;
+}
+
+.item-infoe__text p {
+  margin-bottom: 1.875rem;
+}
+
+.item-infoe__text p:last-child {
+  margin-bottom: 0rem;
+}
+
 .swiper {
   overflow: hidden;
 }
@@ -4544,6 +4636,16 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 85em) {
+  .tope__text {
+    max-width: 675px;
+  }
+
+  .tope__label {
+    max-width: 550px;
+  }
+}
+
 @media (max-width: 84em) {
   .productions__row {
     margin: 2.59375rem 3.15625rem;
@@ -4854,6 +4956,30 @@ button.swiper-pagination-bullet {
 
   .col-archiven__allnew {
     width: 210px;
+  }
+
+  .tope__text {
+    max-width: 400px;
+  }
+
+  .tope__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom bottom;
+       object-position: bottom bottom;
+  }
+
+  .tope__label {
+    margin-top: 0rem;
+    max-width: 100%;
+  }
+
+  .row-infoe__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
 
@@ -5179,6 +5305,10 @@ button.swiper-pagination-bullet {
 
   .col-archiven__allnew {
     display: none;
+  }
+
+  .tope__block {
+    margin-top: -5rem;
   }
 }
 
@@ -5642,6 +5772,70 @@ button.swiper-pagination-bullet {
   .swiper-rtl .archiven-button-prev:after {
     display: none;
   }
+
+  .tope__container {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .tope__body {
+    font-size: 0.875rem;
+    line-height: 1.2142857143;
+  }
+
+  .tope__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tope__text {
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    padding: 0rem 1.875rem;
+  }
+
+  .tope__image {
+    left: 50%;
+    width: 800px;
+    height: 350px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .infoe {
+    background-position: top center;
+  }
+
+  .infoe__container {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .infoe__body {
+    font-size: 0.875rem;
+    line-height: 1.2142857143;
+    padding-top: 1.875rem;
+  }
+
+  .infoe__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 1.25rem;
+  }
+
+  .row-infoe__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-bottom: 1.875rem;
+  }
+
+  .row-infoe__item:last-child {
+    margin-bottom: 0rem;
+  }
 }
 
 @media (max-width: 40.625em) {
@@ -5941,6 +6135,10 @@ button.swiper-pagination-bullet {
 
   .col-archiven__title {
     margin-left: 1.25rem;
+  }
+
+  .tope__image {
+    width: 600px;
   }
 }
 
