@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220609150231">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__col">
+						<div class="header__logo"><img src="img/header/logo.png" alt=""></div>
+					</div>
+					<div class="header__col col-header">
+						<div class="col-header__body">
+							<div class="header__contact contact-header">
+								<div class="contact-header__body">
+									<div class="contact-header__location location-header">
+										<div class="location-header__body">
+											<img src="img/header/location-icon.svg" alt="Location">
+											<p>м. Київ, вул. Бориспільська, 19</p>
+										</div>
+									</div>
+									<div class="contact-header__phone phone-header">
+										<div class="phone-header__body">
+											<img src="img/header/phone-icon.svg" alt="Phone">
+											<a href="tel:+380500102800">+38 (050) 010 28 00</a>
+										</div>
+									</div>
+									<div class="contact-header__social social-header">
+										<div class="social-header__body">
+											<div class="social-header__inst">
+												<a href="#"><img src="img/header/inst-icon.svg" alt="Instagramm"></a>
+											</div>
+											<div class="social-header__facebook">
+												<a href="#"><img src="img/header/facebook-icon.svg" alt="FaceBook"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="header__menu menu">
+								<nav class="menu__body">
+									<div class="menu__home">
+										<a class="active" href="/"><img src="img/header/home-icon.svg" alt="Home"></a>
+									</div>
+									<button type="button" class="search__exit"><span class="menu-icon"></span></button>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите поисковый запрос" class="menu__input hide">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="about.html" class="menu__link">Про нас</a>
+										</li>
+										<li class="menu__item"><a href="production.html" class="menu__link">Виробництво</a>
+											<div class="menu__arrow"></div>
+											<ul class="menu__sublist">
+												<li class="menu__subitem"><a href="productionb.html" class="menu__sublink">Бетону</a></li>
+												<li class="menu__subitem"><a href="productionpan.html" class="menu__sublink">Виробництво
+														панелей</a></li>
+											</ul>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link">Новини</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Екологія</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Експериментальний майданчик</a></li>
+										<li class="menu__item"><a href="#" class="menu__link">Модульні проєкти</a>
+											<div class="menu__arrow"></div>
+											<ul class="menu__sublist">
+												<li class="menu__subitem"><a href="#" class="menu__sublink">111111
+														MODO</a></li>
+												<li class="menu__subitem"><a href="#" class="menu__sublink">Б222222ьні
+														будинки</a></li>
+											</ul>
+										</li>
+										<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+									</ul>
+									<div class="menu__search"><img src="img/header/search-icon.svg" alt="Search"></div>
+								</nav>
+
+							</div>
+							<div class="header__mobilemenu mobilemenu-header">
+								<div class="mobilemenu-header__body">
+									<div class="mobilemenu-header__phone-block">
+										<div class="phone-block__body">
+											<img src="img/header/phone-white.svg" alt="phone"><a href="tel:+380500102800">+38 (050) 010
+												28 00</a>
+										</div>
+									</div>
+									<div class="mobilemenu-header__phone"><img src="img/header/phone-white.svg" alt="phone"></div>
+									<div class="mobilemenu-header__inst"><img src="img/header/inst-white.svg" alt="inst"></div>
+									<div class="mobilemenu-header__facebook"><img src="img/header/facebook-white.svg" alt="Facebook">
+									</div>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск" class="mobilemenu__input">
+									<div class="mobilemenu-header__search"><img src="img/header/search-icon.svg" alt="Search"></div>
+									<button type="button" class="menu__icon icon-menu"><span class="menu-icon"></span></button>
+									<nav class="mobilemenu">
+										<ul class="mobilemenu__list">
+											<li class="mobilemenu__item"><a href="/" class="mobilemenu__link">Головна</a></li>
+											<li class="mobilemenu__item"><a href="about.html" class="mobilemenu__link">Про нас</a></li>
+											<li class="mobilemenu__item">
+												<a href="production.html" class="mobilemenu__link">Виробництво</a>
+												<div class="menu__arrow"></div>
+												<ul class="mobilemenu__sublist">
+													<li class="mobilemenu__subitem"><a href="productionb.html" class="mobilemenu__link">Бетону</a></li>
+													<li class="mobilemenu__subitem"><a href="productionpan.html" class="mobilemenu__link">Виробництво панелей</a></li>
+												</ul>
+											</li>
+											<li class="mobilemenu__item"><a href="#" class="mobilemenu__link">Новини</a></li>
+											<li class="mobilemenu__item"><a href="#" class="mobilemenu__link">Екологія</a></li>
+											<li class="mobilemenu__item"><a href="#" class="mobilemenu__link">Експериментальний
+													майданчик</a></li>
+											<li class="mobilemenu__item"><a href="#" class="mobilemenu__link">Модульні проєкти</a>
+												<div class="menu__arrow"></div>
+												<ul class="mobilemenu__sublist">
+													<li class="mobilemenu__subitem"><a href="#" class="mobilemenu__link">Збірні модульні
+															будинки MODO </a></li>
+													<li class="mobilemenu__subitem"><a href="#" class="mobilemenu__link">Багатоповерхові
+															панельні будинки</a></li>
+												</ul>
+											</li>
+											<li class="mobilemenu__item"><a href="#" class="mobilemenu__link">Контакти</a></li>
+										</ul>
+										<div class="mobilemenu__location"><img src="img/header/location-white.svg" alt="location">
+											м. Київ, вул. Бориспільська, 19
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<div class="toppp">
+			<div class="toppp__container">
+				<div class="toppp__body">
+					<div class="toppp__title title">
+						<h1><span class="yellow-title"><span class="yellow-title">Виробництво</span> <span class="yellow-title">залізо-бетонних</span> <span class="yellow-title">виробів</span></span>
+						</h1>
+					</div>
+					<div class="toppp__label">
+						<h2>Швидкомонтована система будівництва
+							будинків з готових утеплених тришарових панелей
+						</h2>
+					</div>
+					<div class="toppp__row row-toppp">
+						<div class="row-toppp__item item-toppp">
+							<div class="item-toppp__body">
+								<div class="item-toppp__text">
+									<p>Будинки з утеплених тришарових залізобетонних панелей: швидко будуються, мають високі
+										конструктивні показники несучої здатності, мають хорошу звуко- та теплоізоляцію, мають термін
+										служби не менше 50 років.
+									</p>
+									<p>Будинки із залізобетонних панелей за властивостями конструкцій, що захищають, ідентичні міським
+										квартирам.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row-toppp__item item-toppp">
+							<div class="item-toppp__body">
+								<div class="item-toppp__text">
+									<p>Вони довговічні (50 років і більше), мають високу несучу здатність, забезпечують надійну звуко-,
+										вітро-і теплоізоляцію житла. Після монтажу несучих та огороджувальних конструкцій – будинок
+										готовий до введення в експлуатацію без додаткових внутрішніх та зовнішніх робіт. Тож від
+										закладки фундаменту до новосілля може пройти не більше місяця.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<div class="struckturep">
+				<div class="struckturep__container">
+					<div class="struckturep__body">
+						<div class="struckturep__title title">
+							<h2><span class="yellow-title"><span class="yellow-title">Структура</span> <span class="yellow-title">та
+										властивості</span> <span class="yellow-title">панелей</span></span>
+							</h2>
+						</div>
+						<div class="struckturep__image"><img src="img/struckturep/image.jpg" alt="image"></div>
+					</div>
+				</div>
+			</div>
+			<div class="typespp">
+				<div class="typespp__container">
+					<div class="typespp__body">
+						<div class="typespp__row row-typespp">
+							<div class="row-typespp__item item-typespp">
+								<div class="item-typespp__body">
+									<div class="item-typespp__image">
+										<img src="img/typespp/cut01.png" alt="cut">
+										<div class="item-typespp__block block-typespp">
+											<div class="block-typespp__body">
+												<div class="block-typespp__label">
+													<h4>Розріз панелі</h4>
+												</div>
+												<div class="block-typespp__figure"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-typespp__item item-typespp">
+								<div class="item-typespp__body">
+									<div class="item-typespp__title">
+										<p>Будівництво ведеться з панелей повної заводської готовності*, з ідеальною геометрією, що не
+											вимагає підгонки за місцем та виключає проблеми зі стикуванням елементів.</p>
+									</div>
+									<div class="item-typespp__text">
+										<p>Продукція виробляється відповідно до ГОСТ 31310-2015 "Панелі стінові тришарові залізобетонні з
+											ефективним утеплювачем". Зовнішні шари виробів виготовляють з важкого армованого бетону класу
+											В25 (М350), а в якості теплоізоляції використовують екструдований пінополістирол (ЕППС) або
+											кам'яну вату високої щільності.</p>
+										<p>Пінополістиролу, що володіє практично нульовою водо- і паропроникністю, волога не страшна, а
+											мінераловатні плити мають спеціальні борозенки для вентилювання матеріалу.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-typespp__item item-typespp">
+								<div class="item-typespp__body">
+									<div class="item-typespp__image">
+										<img src="img/typespp/cut02.png" alt="cut">
+										<div class="item-typespp__block block-typespp">
+											<div class="block-typespp__body">
+												<div class="block-typespp__label">
+													<h4>Вузли монтажу</h4>
+												</div>
+												<div class="block-typespp__figure"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-typespp__item item-typespp">
+								<div class="item-typespp__body">
+									<div class="item-typespp__image">
+										<img src="img/typespp/cut03.png" alt="cut">
+										<div class="item-typespp__block block-typespp left">
+											<div class="block-typespp__body left">
+												<div class="block-typespp__label left">
+													<h4>Вузли монтажу</h4>
+												</div>
+												<div class="block-typespp__figure left"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="typespp__textblock textblock-typespp">
+							<div class="textblock-typespp__body">
+								<div class="textblock-typespp__figure"></div>
+								<div class="textblock-typespp__text">
+									<p>Обидва утеплювачі екологічно безпечні, захищені шарами бетону від факторів деструкції (кисень
+										повітря, ультрафіолет та ін.), не підтримують поширення вогню. Товщина зовнішнього шару бетону
+										50-60 мм, внутрішнього (несучого) - 120 мм, товщина утеплювача, що визначається теплотехнічним
+										розрахунком для конкретної зони будівництва, може становити від 150 до 300 мм, виходячи з
+										кліматичних умов. </p>
+									<p>Коефіцієнт опору теплопередачі тришарових стін, що утеплюють, утеплених ЕППС 150 мм, досягає
+										величини 5,9 (м²‧⁰С)/Вт, що перевищує значення, наведені в ДБН В.2.6-31:2006 «Теплова ізоляція
+										будівель» для обох температурних зон України та Європи для будинків, побудованих після 1 січня
+										2021, – 0,20 Вт/м2К; (R = 5,00 м2К/Вт).</p>
+									<p>Таким чином, забудовник економить як на додатковому теплозахисту будинку, так і на його опаленні та
+										кондиціонуванні.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sizespp">
+				<div class="sizespp__container">
+					<div class="sizespp__body">
+						<div class="sizespp__title title">
+							<h2><span class="yellow-title"><span class="yellow-title">Розміри</span> <span class="yellow-title">стінових</span> <span class="yellow-title">панелей</span></span></h2>
+						</div>
+						<div class="sizespp__label">
+							<p>Заводське обладнання дозволяє виробництво найпрактичнішіх розмірів виробів довжиною 7,2 × 3,3 (3,0) м і
+								шириною 3,6 * 3,3 (3,3) м</p>
+						</div>
+						<div class="sizespp__row row-sizespp">
+							<div class="row-sizespp__item item-sizespp">
+								<div class="item-sizespp__body">
+									<div class="item-sizespp__image"><img src="img/sizespp/size1.png" alt="Размер"></div>
+									<div class="item-sizespp__block block-sizespp">
+										<div class="block-sizespp__body">
+											<div class="block-sizespp__figure"></div>
+											<div class="block-sizespp__label">
+												<h5>Вузол з готовим фасадом</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-sizespp__item item-sizespp">
+								<div class="item-sizespp__body">
+									<div class="item-sizespp__image"><img src="img/sizespp/size2.png" alt="Размер"></div>
+									<div class="item-sizespp__block block-sizespp">
+										<div class="block-sizespp__body">
+											<div class="block-sizespp__figure"></div>
+											<div class="block-sizespp__label">
+												<h5>Вузол без улаштування фасаду</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-sizespp__item item-sizespp">
+								<div class="item-sizespp__body">
+									<div class="item-sizespp__text">
+										<p>Бетонні шари в плитах з'єднані між собою жорсткими діагональними зв'язками з оцинкованих або
+											порошково пофарбованих зв'язків. Для скріплення елементів один з одним у них передбачені сталеві
+											петлі, що розташовані з кроком 400-500 мм. У тілі панелей вже є необхідні технологічні отвори та
+											штраби для прокладання інженерних мереж, виконані згідно з проектом.</p>
+										<p>У віконних та дверних отворах, на всю ширину теплоізоляційного контуру, закладено 50-міліметрові
+											панелі для монтажу коробок; а для вікон у фасадній площині панелей сформовані виступи -
+											"чверті", що виключають тепловтрати по периметру рами.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sizespp__text">
+							<p>Для внутрішніх несучих стін виготовляють одношарові залізобетонні панелі товщиною 120-180 мм (перегородки
+								можуть бути виконані з будь-яких матеріалів, наприклад, з вологостійких повнотілих пазогребневих плит з
+								прошарком з мінвати як звукоізолятор).</p>
+							<p>Перекриття служать багатопустотні плити марок ПБ і ПК (220 або 265 мм), а також монолітні вироби, що
+								дозволяють сформувати нестандартні отвори для димових труб, сходів тощо.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="possiblepp">
+				<div class="possiblepp__back"><img src="img/possiblepp/back.png" alt="back"></div>
+				<div class="possiblepp__container">
+					<div class="possiblepp__body">
+						<div class="possiblepp__title title">
+							<h2><span class="yellow-title">Архітектурні можливості</span></h2>
+						</div>
+						<div class="possiblepp__text">
+							<p>Наша компанія пропонує готові рішення утеплених ж/б-домокомплектів для ринку як приватного домобудування
+								так і багатоквартирного житлового будівництва для забезпечення потреб регіону, маємо виробничу базу з
+								відповідним обладнанням, що дає можливість працювати за індивідуальними проектами як одно-двоповерховим
+								приватним будинкам так і багатоквартирним соці об'єктам призначеним для заселення великої кількості
+								людей, у мінімальні терміни виробництва та будівництва, з мінімальними витратами на виробництво та
+								монтаж.</p>
+							<p>Панельний будинок сьогодні — це не типова коробка, а сучасний будинок, в якому можуть бути реалізовані
+								різні архітектурно-планувальні рішення. Так, технологія дозволяє зробити в будівлі консольні виступи,
+								друге світло, вільне планування без внутрішніх несучих стін, вікна та прорізи будь-яких розмірів та форм.
+								Безумовно, є певні обмеження, але стосуються вони переважно класичної мансарди і радіусних конструкцій,
+								важких у виконанні навіть під час будівництва штучних матеріалів.</p>
+						</div>
+						<div class="possiblepp__figure"></div>
+					</div>
+				</div>
+			</div>
+			<div class="facturepp">
+				<div class="facturepp__container">
+					<div class="facturepp__body">
+						<div class="facturepp__title title">
+							<h2><span class="yellow-title"><span class="yellow-title"><span class="yellow-title">Фактурні</span> <span class="yellow-title">рішення</span>
+										для</span> <span class="yellow-title">фасадів</span></span></h2>
+						</div>
+						<div class="facturepp__row row-facturepp">
+							<div class="row-facturepp__item item-facturepp">
+								<div class="item-facturepp__body">
+									<div class="item-facturepp__text">
+										<p>Панельні фасади підлягають будь-якому виду оздоблення, найчастіше їх оштукатурюють або
+											облицьовують плиткою під камінь або цеглу. При цьому оздоблювальні роботи досить трудомісткі та
+											вимагатимуть додаткового часу. Проте, розвиваючи ідею швидкомонтованих бетонних будинків, нами
+											пропонуються готові варіанти оформлення стін. Суть у тому, що декоративний вигляд їм можна
+											надати ще під час виготовлення панелей. Одне з оригінальних рішень - створення фактурної
+											поверхні в техніці архітектурного та "митого" бетону. Завдяки спеціальним добавкам зовнішній шар
+											бетону (3-5 мм) на виробах не застигає, і надалі його легко змивають струменем води під тиском,
+											оголюючи гранітний наповнювач. Таким чином, фасади набувають ефектної «кам'яної» фактури, що не
+											передбачає будь-якої обробки.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-facturepp__item item-facturepp">
+								<div class="item-facturepp__body">
+									<div class="item-facturepp__text">
+										<p>Цікаво виглядає і дряпаний бетон: поверхню, що тільки почала застигати, обробляють жорсткими
+											щітками, покриваючи її малюнком з тонких борозенок. Ще одна техніка декорування полягає у
+											формуванні на панелях різних фактур. Робиться це за допомогою матриць, що надають стінам рельєф
+											кам'яної або цегляної кладки, бруса, обшивки та ін.
+										</p>
+										<p>одібним способом на фасадах може бути надрукований також будь-який геометричний візерунок або,
+											наприклад, монограма власника будинку. На місце збирання панелі доставляють вже забарвленими
+											в обраний замовником колір.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="facturepp__image">
+							<img src="img/facturepp/facture.jpg" alt="">
+						</div>
+						<div class="facturepp__slider swiper">
+							<div class="facturepp__wrapper swiper-wrapper">
+								<div class="facturepp__slide swiper-slide">
+									<img src="img/facturepp/slide1.jpg" alt="">
+								</div>
+								<div class="facturepp__slide swiper-slide">
+									<img src="img/facturepp/slide1.jpg" alt="">
+								</div>
+								<div class="facturepp__slide swiper-slide">
+									<img src="img/facturepp/slide1.jpg" alt="">
+								</div>
+								<div class="facturepp__slide swiper-slide">
+									<img src="img/facturepp/slide1.jpg" alt="">
+								</div>
+								<div class="facturepp__slide swiper-slide">
+									<img src="img/facturepp/slide1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<button type="button" class="swiper-button-prev"></button>
+							<button type="button" class="swiper-button-next"></button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="assembpp">
+				<div class="assembpp__back">
+					<img src="img/assembpp/back.png" alt="background">
+				</div>
+				<div class="assembpp__container">
+					<div class="assembpp__body">
+						<div class="assembpp__figure"></div>
+						<div class="assembpp__title title">
+							<h2><span class="yellow-title">Складання будинку</span></h2>
+						</div>
+						<div class="assembpp__texttop">
+							<p>Бетонні дома зазвичай ставлять на плитний фундамент, на стрічку глибокого закладення або на міні сваї.
+								Виробники тришарових же/б панелей пропонують спорудження плити висотою 250-300 мм, що утеплює по всій
+								площі 100-міліметровим шаром ЕППС (базовий варіант). Домокомплект доставляють місце панелевозами
+								вантажопідйомністю до 20 т. Для розвантаження та мотажу панелей потрібен автокран (25–120 т), якому
+								необхідно забезпечити під'їздні шляхи.</p>
+						</div>
+						<div class="assembpp__textmiddle">
+							<p>Стіни одного поверху монтують за день-два. Спочатку встановлені панелі фіксують підпорками, а потім
+								виробляють пошарове з'єднання елементів між собою. У петлі, закладені в несучий (внутрішній) шар бетону,
+								вставляють арматурні стрижні і замонолічують стикувальний вузол, створюючи єдину збірно-монолітну
+								огороджувальну конструкцію. У теплоізоляційному контурі міжпанельні шви заповнюють мінватою або
+								запінюють, а в зовнішньому шарі бетону їх прокладають джгутом з пінополіетилену і закладають герметиком.
+								Таким чином, продування або промерзання стін через стики панелей виключено. </p>
+							<p>Сполучні вузли в перекриттях та несучих перегородках, включаючи кутові, бетонують у площині панелей. Всі
+								внутрішні поверхні виходять рівними (перепади висот - не більше 3-5 мм) і вже готовими до фінішного
+								оздоблення (якщо це потребуєзамовнику), при цьому оштукатурювати основу із застосуванням армуючої сітки,
+								як це робиться в цегляних або блокових будинках, немає необхідності , тому що стінові панелі мають вже
+								чистову поверхню в стилі «Лофт».
+							</p>
+						</div>
+						<div class="assembpp__textblock textblock-assembpp">
+							<div class="textblock-assembpp__body">
+								<div class="textblock-assembpp__text">
+									<p>Дах може бути як скатним по перекриттю з дерев'яних балок, так і плоским. Конструкція, влаштована
+										на основі пустотних плит товщиною 220 мм з 200-міліметровим утепленням з ЕППС, стяжкою з
+										керамзитобетону, гідроізоляцією рулонного типу та із залізобетонним парапетом висотою 600 мм,
+										оптимально «адаптована» до панельної технології. Крім того, плоский дах повною мірою відповідає
+										сучасним тенденціям у приватній архітектурі, націленим на лаконічність ліній та простоту форм.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="termspp">
+				<div class="termspp__container">
+					<div class="termspp__body">
+						<div class="termspp__title title">
+							<h2><span class="yellow-title">Терміни</span></h2>
+						</div>
+						<div class="termspp__text">
+							<p>Замовникам пропонуються комплексні рішення, що включають весь перелік робіт від проектування до закладу
+								будинку під дах. Зрозуміло, на швидкість впливають геологічні та ландшафтні особливості ділянки забудови
+								та архітектура будівлі. Як уже говорилося, виробництво та складання (стін та перекриття ) одного поверху
+								займає не більше 14 днів, а на зведення повністю готового з оздобленням будинку йде максимум 21–28 днів
+							</p>
+						</div>
+						<div class="termspp__label">
+							<p>Переваги та недоліки будівництва із тришарових залізобетонних панелей</p>
+						</div>
+						<div class="termspp__row row-termspp main">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body main">
+									<div class="item-termspp__label main">
+										<h4>Переваги</h4>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body main">
+									<div class="item-termspp__label main">
+										<h4>Недоліки</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp white">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Швидке складання будинку (монтаж можна проводити в будь-яких погодних умовах)</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Задіяння важкої техніки, під'їзні колії та майданчики для її роботи</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp grey">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Відповідність стандартам якості та, зокрема, точність геометрії всіх елементів</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Обмежений спектр архітектурно-планувальних рішень</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp white">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Відсутність необхідності додаткового утеплення стін</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Необхідність улаштування капітального фундаменту під монтаж залізобетонних стін</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp grey">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Висока несуча здатність, пожежна безпека, стійкість до навмисного механічного руйнування (з
+											метою несанкціонованого проникнення в житло) та довговічність конструктивних елементів будівлі
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Обмежена кількість компаній, що мають виробничу базу для виготовлення панельних домокомплектів
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp white">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Відмінні теплоізолюючі здібності огороджувальних конструкцій, що дозволяє (низькотемпературні
+											системи опалення та ін.) досягти високого рівня енергоефективності будинку
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Обмеження внесення коригувань у планування на етапі будівництва</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp grey">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Абсолютна герметичність міжпанельних стиків; надійний вітро- та звукозахист приміщень
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp white">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Можливість вибору панелей з готовим зовнішнім декором, а також виконання будь-якого виду
+											фасадної обробки без урахування навантаження на основу (навісні вентильовані системи, кам'яне
+											облицювання та ін.)
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp grey">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Відсутність додаткових робіт із влаштування фасадів
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp white">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Відсутність внутрішніх оздоблювальних робіт
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp grey">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>Наявність запроектованих каналів та технологічних отворів для прихованого прокладання інженерних
+											систем
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body grey">
+									<div class="item-termspp__label grey">
+										<p>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="termspp__row row-termspp white">
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p>Застосовуються у зонах підвищеної сейсмічної активності
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row-termspp__item item-termspp">
+								<div class="item-termspp__body white">
+									<div class="item-termspp__label white">
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-spollers class="termspp__spollers spollers">
+							<div class="spollers-termspp__item spollers__item">
+								<button type="button" data-spoller class="spollers-termspp__title spollers__title">Переваги</button>
+								<div class="spollers-termspp__body spollers__body">
+									<div class="spoilers__row white">Швидке складання будинку (монтаж можна проводити в будь-яких погодних
+										умовах)</div>
+									<div class="spoilers__row gray">Відповідність стандартам якості та, зокрема, точність геометрії всіх
+										елементів</div>
+									<div class="spoilers__row white">Відсутність необхідності додаткового утеплення стін</div>
+									<div class="spoilers__row gray">Висока несуча здатність, пожежна безпека, стійкість до навмисного
+										механічного руйнування (з метою несанкціонованого проникнення в житло) та довговічність
+										конструктивних елементів будівлі
+									</div>
+									<div class="spoilers__row white">Відмінні теплоізолюючі здібності огороджувальних конструкцій, що
+										дозволяє (низькотемпературні системи опалення та ін.) досягти високого рівня енергоефективності
+										будинку
+									</div>
+									<div class="spoilers__row gray">Абсолютна герметичність міжпанельних стиків; надійний вітро- та
+										звукозахист приміщень </div>
+									<div class="spoilers__row white">Можливість вибору панелей з готовим зовнішнім декором, а також
+										виконання будь-якого виду фасадної обробки без урахування навантаження на основу (навісні
+										вентильовані системи, кам'яне облицювання та ін.)</div>
+									<div class="spoilers__row gray">Відсутність додаткових робіт із влаштування фасадів</div>
+									<div class="spoilers__row white">Відсутність внутрішніх оздоблювальних робіт</div>
+									<div class="spoilers__row gray">Наявність запроектованих каналів та технологічних отворів для
+										прихованого прокладання інженерних систем</div>
+									<div class="spoilers__row white">Застосовуються у зонах підвищеної сейсмічної активності</div>
+								</div>
+							</div>
+						</div>
+						<div data-spollers class="termspp__spollers spollers">
+							<div class="spollers-termspp__item spollers__item">
+								<button type="button" data-spoller class="spollers-termspp__title spollers__title">Недоліки</button>
+								<div class="spollers-termspp__body spollers__body">
+									<div class="spoilers__row white">Задіяння важкої техніки, під'їзні колії та майданчики для її роботи
+									</div>
+									<div class="spoilers__row gray">Обмежений спектр архітектурно-планувальних рішень</div>
+									<div class="spoilers__row white">Необхідність улаштування капітального фундаменту під монтаж
+										залізобетонних стін</div>
+									<div class="spoilers__row gray">Обмежена кількість компаній, що мають виробничу базу для виготовлення
+										панельних домокомплектів
+									</div>
+									<div class="spoilers__row white">Обмеження внесення коригувань у планування на етапі будівництва
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__row row-footer">
+						<div class="row-footer__body">
+							<div class="row-footer__col col-footer-left">
+								<div class="col-footer-left__body">
+									<form action="#" class="col-footer-left__form form-footer">
+										<div class="form-footer__title">
+											<h3>Надіслати повідомлення</h3>
+										</div>
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваще имя" class="form-footer__name">
+										<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Ваш телефон" class="form-footer__mobile">
+										<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail" class="form-footer__email">
+										<textarea class="form-footer__textarea" placeholder="Повідомлення" name="" id="" cols=" 30" rows="5"></textarea>
+										<button type="submit" class="form-footer__button">Залишити заявку</button>
+										<div class="form-footer__checkbox checkbox-footer">
+											<input id="c_1" data-error="Ошибка" class="checkbox-footer__input" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox-footer__label"><span class="checkbox-footer__text">Використовуючи форму зворотнього зв'язку, користувач дає
+													свою згоду з умовами справжньої політики конфіденційності</span></label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="row-footer__col col-footer-right">
+								<div class="col-footer-right__body">
+									<div class="col-footer-right__item item-footer">
+										<div class="item-footer__label">Нас легко знайти</div>
+										<div class="item-footer__contact-block contact-block-footer">
+											<div class="contact-block-footer__body">
+												<div class="contact-block-footer__location"><img src="img/footer/location.svg" alt="location">м. Київ, вул. Бориспільська, 19</div>
+												<div class="contact-block-footer__phone"><img src="img/footer/phone.svg" alt="phone"><a href="tel:+380500102800">+38 (050) 010 28 00</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-footer-right__location"><img src="img/footer/location-big.svg" alt="location">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__row row-footer-copy">
+				<div class="row-footer-copy__body">
+					<div class="row-footer-copy__copy">
+						© 2022 Б19. Усі права захищені
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20220609150231"></script>
+</body>
+
+</html>
