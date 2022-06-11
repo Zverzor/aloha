@@ -3744,6 +3744,15 @@
             searchMobileInput.classList.remove("show");
         }
     }));
+    const url = window.location.href;
+    const pcMenu = document.querySelectorAll(".menu__link");
+    const home = document.querySelector(".homelink");
+    if ("http://192.168.1.3:8080/index.html" == url) home.classList.add("active");
+    console.log(url);
+    pcMenu.forEach((item => {
+        item.getAttribute("href");
+        if (item == url) item.classList.add("active");
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
