@@ -1886,6 +1886,14 @@ h6 {
   background: #fff;
 }
 
+.videomain__body {
+  width: 100%;
+}
+
+.videomain__video video {
+  width: 100%;
+}
+
 .newlvl__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2129,7 +2137,7 @@ h6 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 453px;
+  width: 370px;
   height: 0.625rem;
   border-top: 1px solid #AAAAAA;
   border-right: 1px solid #AAAAAA;
@@ -5394,6 +5402,9 @@ h6 {
 
 .item-smartb__image.images {
   margin-left: 1.25rem;
+  margin-top: -6.25rem;
+  margin-bottom: -6.25rem;
+  width: 110%;
 }
 
 .infob {
@@ -6718,7 +6729,7 @@ button.swiper-pagination-bullet {
 
   .col-top-about__button::after {
     right: -36.5px;
-    width: 225px;
+    width: 130px;
   }
 
   .item-benefista__image {
@@ -7081,6 +7092,7 @@ button.swiper-pagination-bullet {
 
   .item-smartb__image.images {
     margin-top: 0rem;
+    width: auto;
   }
 
   .item-smartb__image {
@@ -7288,7 +7300,7 @@ button.swiper-pagination-bullet {
 
   .col-top-about__button::after {
     right: 65.5px;
-    width: 110px;
+    width: 40px;
   }
 
   .col-top-about__image {
