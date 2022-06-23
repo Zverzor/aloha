@@ -3635,37 +3635,77 @@
             observer: true,
             observeParents: true,
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 90,
             speed: 800,
             autoHeight: true,
+            loop: true,
             navigation: {
-                prevEl: ".ratem__slider-prev",
-                nextEl: ".ratem__slider-next"
+                prevEl: ".ratem-swiper-button-prev",
+                nextEl: ".ratem-swiper-button-next"
             },
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 0
+                    spaceBetween: 20
                 },
                 468: {
                     slidesPerView: 1,
-                    spaceBetween: 0
+                    spaceBetween: 20
                 },
                 579: {
                     slidesPerView: 1,
-                    spaceBetween: 30
+                    spaceBetween: 20
                 },
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 20
+                    spaceBetween: 80
                 },
                 992: {
                     slidesPerView: 2,
-                    spaceBetween: 20
+                    spaceBetween: 180
                 },
                 1268: {
                     slidesPerView: 3,
-                    spaceBetween: 100
+                    spaceBetween: 90
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".wherebuy__slider")) new core(".wherebuy__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 7,
+            spaceBetween: 60,
+            speed: 800,
+            loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                468: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                579: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 6,
+                    spaceBetween: 20
+                },
+                1268: {
+                    slidesPerView: 7,
+                    spaceBetween: 40
                 }
             },
             on: {}
