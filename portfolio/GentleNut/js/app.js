@@ -3611,8 +3611,8 @@
                     autoHeight: true
                 },
                 579: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 0,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                     autoHeight: true
                 },
                 768: {
