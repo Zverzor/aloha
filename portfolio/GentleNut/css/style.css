@@ -1067,8 +1067,8 @@ body {
 .col-smoothies__image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .col-smoothies__figure {
