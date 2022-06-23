@@ -951,6 +951,7 @@ body {
 
 .smoothies__bottomborder img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2804,9 +2805,16 @@ button.swiper-pagination-bullet {
     left: -400px;
   }
 
-  .swiper-autoheight,
-  .swiper-autoheight .swiper-slide {
-    width: 50%;
+  .ratem-slide__image img {
+    width: 225px;
+    height: 225px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .ratem-slide__image svg {
+    width: 263px;
+    height: 199px;
   }
 
   .wherebuy__tree svg {
@@ -2838,13 +2846,6 @@ button.swiper-pagination-bullet {
     line-height: 1.25;
     margin-top: 0.75rem;
     margin-bottom: 2.25rem;
-  }
-}
-
-@media (max-width: 43.125em) {
-  .swiper-autoheight,
-  .swiper-autoheight .swiper-slide {
-    width: 80%;
   }
 }
 
