@@ -3923,6 +3923,45 @@
             },
             on: {}
         });
+        if (document.querySelector(".technology__slider")) new core(".technology__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 0,
+            spaceBetween: 0,
+            speed: 800,
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    width: 300
+                },
+                468: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    width: 450
+                },
+                579: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    width: 450
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    width: 600
+                },
+                992: {
+                    slidesPerView: 8,
+                    spaceBetween: 0
+                },
+                1268: {
+                    slidesPerView: 8,
+                    spaceBetween: 0
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
