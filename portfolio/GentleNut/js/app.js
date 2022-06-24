@@ -3800,6 +3800,7 @@
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
+            observeSlideChildren: true,
             slidesPerView: 4,
             spaceBetween: 30,
             speed: 800,
@@ -3958,6 +3959,206 @@
                 1268: {
                     slidesPerView: 8,
                     spaceBetween: 0
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".smozie__slider")) new core(".smozie__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".ratem-swiper-button-prev",
+                nextEl: ".ratem-swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                468: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                579: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 180
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 90
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".desert__slider")) new core(".desert__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".ratem-swiper-button-prev",
+                nextEl: ".ratem-swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                468: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                579: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 180
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 90
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".breakfast__slider")) new core(".breakfast__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".ratem-swiper-button-prev",
+                nextEl: ".ratem-swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                468: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                579: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 180
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 90
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".post__slider")) new core(".post__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".ratem-swiper-button-prev",
+                nextEl: ".ratem-swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                468: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                579: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 180
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 90
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".alco__slider")) new core(".alco__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            speed: 800,
+            loop: true,
+            navigation: {
+                prevEl: ".ratem-swiper-button-prev",
+                nextEl: ".ratem-swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                468: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                579: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 80
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 180
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 90
                 }
             },
             on: {}

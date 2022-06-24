@@ -1052,6 +1052,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 10px;
+  width: 259px;
+  height: 119px;
+}
+
+.smoothies__bottom-left svg {
+  width: 259px;
+  height: 119px;
 }
 
 .smoothies__back {
@@ -2050,6 +2057,258 @@ body {
   display: none;
 }
 
+.topr {
+  position: relative;
+}
+
+.topr__body {
+  padding-top: 10.3125rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+}
+
+.topr__title {
+  text-align: center;
+}
+
+.topr__block {
+  position: relative;
+}
+
+.topr-tabs__elementsright {
+  position: absolute;
+  top: 320px;
+  right: 0;
+  width: 188px;
+  height: 335px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.topr-tabs__elementsright svg {
+  width: 188px;
+  height: 335px;
+}
+
+.topr-tabs__navigation {
+  margin-top: 4.375rem;
+  position: relative;
+}
+
+.topr-tabs__title {
+  text-align: center;
+  margin-right: 13.75rem;
+  position: relative;
+  margin-bottom: 6.25rem;
+}
+
+.topr-tabs__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(../img/base/buttonBorder.svg);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 0px;
+  height: 84px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.topr-tabs__title:hover::after {
+  width: 237px;
+}
+
+.topr-tabs__title:first-child {
+  margin-right: 12.5rem;
+}
+
+.topr-tabs__title:last-child {
+  margin-right: 0rem;
+}
+
+.topr-tabs__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-image: url(../img/base/button.svg);
+  width: 260px;
+  height: 84px;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.topr-tabs__title._tab-active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(../img/base/buttonBorder.svg);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 237px;
+  height: 84px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-tabs__title {
+  text-align: center;
+  margin-top: 7.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.body-tabs__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.body-tabs__title.yellow::before {
+  background-image: url(../img/catalog/yellow.svg);
+  width: 359px;
+  height: 149px;
+  -webkit-transform: translateX(-50%) translateY(-40%);
+      -ms-transform: translateX(-50%) translateY(-40%);
+          transform: translateX(-50%) translateY(-40%);
+}
+
+.body-tabs__title.green::before {
+  background-image: url(../img/catalog/green.svg);
+  width: 359px;
+  height: 149px;
+  -webkit-transform: translateX(-50%) translateY(-20%);
+      -ms-transform: translateX(-50%) translateY(-20%);
+          transform: translateX(-50%) translateY(-20%);
+}
+
+.body-tabs__title.blue::before {
+  background-image: url(../img/catalog/blue.svg);
+  width: 359px;
+  height: 200px;
+  -webkit-transform: translateX(-50%) translateY(-20%);
+      -ms-transform: translateX(-50%) translateY(-20%);
+          transform: translateX(-50%) translateY(-20%);
+}
+
+.body-tabs__title.yellow-w::before {
+  background-image: url(../img/catalog/yellow.svg);
+  width: 680px;
+  height: 149px;
+  -webkit-transform: translateX(-35%) translateY(-50%);
+      -ms-transform: translateX(-35%) translateY(-50%);
+          transform: translateX(-35%) translateY(-50%);
+}
+
+.body-tabs__title.red::before {
+  background-image: url(../img/catalog/red.svg);
+  width: 680px;
+  height: 149px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.body-tabs__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 4.25rem;
+}
+
+.body-tabs__text p {
+  max-width: 737px;
+}
+
+.body-tabs__text.w833 p {
+  max-width: 833px;
+}
+
+.body-tabs__text.w929 p {
+  max-width: 929px;
+}
+
+.body-tabs__text.w1006 p {
+  max-width: 1006px;
+}
+
+.body-tabs__text.w1062 p {
+  max-width: 1062px;
+}
+
+.topr-slide__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.topr-slide__image {
+  position: relative;
+}
+
+.topr-slide__image img {
+  position: relative;
+  z-index: 2;
+}
+
+.topr-slide__image svg {
+  width: 328px;
+  height: 248px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 1;
+}
+
+.topr-slide__name {
+  margin-top: 2.5625rem;
+  font-family: "LifehackSans";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+  max-width: 280px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  word-break: keep-all;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual;
+}
+
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2301,8 +2560,6 @@ body {
 .swiper-button-prev {
   position: absolute;
   top: 50%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
   margin-top: calc(0px - var(--swiper-navigation-size) / 2);
   z-index: 10;
   cursor: pointer;
@@ -2315,6 +2572,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 
@@ -3427,6 +3687,14 @@ button.swiper-pagination-bullet {
   .mobile-tabs {
     display: block;
   }
+
+  .topr-tabs__elementsright {
+    display: none;
+  }
+
+  .body-tabs__title {
+    margin-top: 5.625rem;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -3852,6 +4120,16 @@ button.swiper-pagination-bullet {
     padding-top: 3.125rem;
   }
 
+  .smoothies__bottom-left {
+    width: 137px;
+    height: 63px;
+  }
+
+  .smoothies__bottom-left svg {
+    width: 137px;
+    height: 63px;
+  }
+
   .smoothies__elements-top svg {
     width: 120px;
     height: 145px;
@@ -4044,6 +4322,56 @@ button.swiper-pagination-bullet {
   .body-tabs__title.blue::before {
     width: 340px;
     height: 76px;
+  }
+
+  .topr__body {
+    padding-top: 8.75rem;
+    padding-bottom: 3.125rem;
+  }
+
+  .body-tabs__title {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .body-tabs__title.yellow::before {
+    width: 340px;
+    height: 76px;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+        -ms-transform: translateX(-40%) translateY(-50%);
+            transform: translateX(-40%) translateY(-50%);
+  }
+
+  .body-tabs__title.green::before {
+    width: 340px;
+    height: 76px;
+  }
+
+  .body-tabs__title.blue::before {
+    width: 340px;
+    height: 76px;
+  }
+
+  .body-tabs__title.yellow-w::before {
+    width: 340px;
+    height: 76px;
+  }
+
+  .body-tabs__title.red::before {
+    width: 340px;
+    height: 76px;
+  }
+
+  .topr-slide__image img {
+    width: 225px;
+    height: 225px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .topr-slide__image svg {
+    width: 263px;
+    height: 199px;
   }
 }
 
