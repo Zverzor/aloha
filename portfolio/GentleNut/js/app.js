@@ -4173,8 +4173,8 @@
             autoHeight: true,
             loop: true,
             navigation: {
-                prevEl: ".ratem-swiper-button-prev",
-                nextEl: ".ratem-swiper-button-next"
+                prevEl: ".ratem-swiper-button-prev-center",
+                nextEl: ".ratem-swiper-button-next-center"
             },
             breakpoints: {
                 320: {
