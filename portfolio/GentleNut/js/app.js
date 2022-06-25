@@ -3621,6 +3621,73 @@
             destroy
         });
     }
+    function HashNavigation(_ref) {
+        let {swiper, extendParams, emit, on} = _ref;
+        let initialized = false;
+        const document = ssr_window_esm_getDocument();
+        const window = ssr_window_esm_getWindow();
+        extendParams({
+            hashNavigation: {
+                enabled: false,
+                replaceState: false,
+                watchState: false
+            }
+        });
+        const onHashChange = () => {
+            emit("hashChange");
+            const newHash = document.location.hash.replace("#", "");
+            const activeSlideHash = swiper.slides.eq(swiper.activeIndex).attr("data-hash");
+            if (newHash !== activeSlideHash) {
+                const newIndex = swiper.$wrapperEl.children(`.${swiper.params.slideClass}[data-hash="${newHash}"]`).index();
+                if ("undefined" === typeof newIndex) return;
+                swiper.slideTo(newIndex);
+            }
+        };
+        const setHash = () => {
+            if (!initialized || !swiper.params.hashNavigation.enabled) return;
+            if (swiper.params.hashNavigation.replaceState && window.history && window.history.replaceState) {
+                window.history.replaceState(null, null, `#${swiper.slides.eq(swiper.activeIndex).attr("data-hash")}` || "");
+                emit("hashSet");
+            } else {
+                const slide = swiper.slides.eq(swiper.activeIndex);
+                const hash = slide.attr("data-hash") || slide.attr("data-history");
+                document.location.hash = hash || "";
+                emit("hashSet");
+            }
+        };
+        const init = () => {
+            if (!swiper.params.hashNavigation.enabled || swiper.params.history && swiper.params.history.enabled) return;
+            initialized = true;
+            const hash = document.location.hash.replace("#", "");
+            if (hash) {
+                const speed = 0;
+                for (let i = 0, length = swiper.slides.length; i < length; i += 1) {
+                    const slide = swiper.slides.eq(i);
+                    const slideHash = slide.attr("data-hash") || slide.attr("data-history");
+                    if (slideHash === hash && !slide.hasClass(swiper.params.slideDuplicateClass)) {
+                        const index = slide.index();
+                        swiper.slideTo(index, speed, swiper.params.runCallbacksOnInit, true);
+                    }
+                }
+            }
+            if (swiper.params.hashNavigation.watchState) dom(window).on("hashchange", onHashChange);
+        };
+        const destroy = () => {
+            if (swiper.params.hashNavigation.watchState) dom(window).off("hashchange", onHashChange);
+        };
+        on("init", (() => {
+            if (swiper.params.hashNavigation.enabled) init();
+        }));
+        on("destroy", (() => {
+            if (swiper.params.hashNavigation.enabled) destroy();
+        }));
+        on("transitionEnd _freeModeNoMomentumRelease", (() => {
+            if (initialized) setHash();
+        }));
+        on("slideChange", (() => {
+            if (initialized && swiper.params.cssMode) setHash();
+        }));
+    }
     function Autoplay(_ref) {
         let {swiper, extendParams, on, emit} = _ref;
         let timeout;
@@ -3895,7 +3962,7 @@
             loop: true,
             breakpoints: {
                 320: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 2.5,
                     spaceBetween: 0,
                     autoHeight: true
                 },
@@ -4164,17 +4231,68 @@
             on: {}
         });
         if (document.querySelector(".topi__slider")) new core(".topi__slider", {
-            modules: [ Navigation ],
+            modules: [ Navigation, HashNavigation ],
             observer: true,
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 90,
             speed: 800,
             autoHeight: true,
+            hashNavigation: true,
+            hashNavigation: {
+                watchState: true,
+                replaceState: true
+            },
             loop: true,
             navigation: {
                 prevEl: ".ratem-swiper-button-prev-center",
                 nextEl: ".ratem-swiper-button-next-center"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                468: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                579: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 80
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 180
+                },
+                1268: {
+                    slidesPerView: 1,
+                    spaceBetween: 90
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".topre__slider")) new core(".topre__slider", {
+            modules: [ Navigation, HashNavigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 90,
+            speed: 800,
+            autoHeight: true,
+            hashNavigation: true,
+            hashNavigation: {
+                watchState: true,
+                replaceState: true
+            },
+            loop: true,
+            navigation: {
+                prevEl: ".topre-button-prev",
+                nextEl: ".topre-button-next"
             },
             breakpoints: {
                 320: {
