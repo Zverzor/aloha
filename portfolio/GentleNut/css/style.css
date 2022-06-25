@@ -328,6 +328,43 @@ h6 {
           transform: rotate(180deg);
 }
 
+.ratem-swiper-button-prev-center,
+.swiper-rtl .ratem-swiper-button-next-center {
+  top: 300px !important;
+  left: -40px !important;
+  right: auto;
+}
+
+.ratem-swiper-button-prev-center:after,
+.swiper-rtl .ratem-swiper-button-next-center:after {
+  content: "";
+  background-image: url(../img/base/swiper-arrow.svg);
+  width: 60px !important;
+  height: 60px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ratem-swiper-button-next-center,
+.swiper-rtl .ratem-swiper-button-prev-center {
+  top: 300px !important;
+  right: -40px !important;
+  left: auto;
+}
+
+.ratem-swiper-button-next-center:after,
+.swiper-rtl .ratem-swiper-button-prev-center:after {
+  content: "";
+  background-image: url(../img/base/swiper-arrow.svg);
+  width: 60px !important;
+  height: 60px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .tabs__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,6 +989,7 @@ body {
 }
 
 .bestsellers__body {
+  margin-top: 3.125rem;
   margin-bottom: 8.75rem;
 }
 
@@ -2309,6 +2347,193 @@ body {
           hyphens: manual;
 }
 
+.topi {
+  position: relative;
+}
+
+.topi__body {
+  padding-bottom: 9.0625rem;
+  position: relative;
+}
+
+.topi__bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 206px;
+  height: 141px;
+}
+
+.topi__bottom-left svg {
+  width: 206px;
+  height: 141px;
+}
+
+.topi__bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 93px;
+  height: 94px;
+}
+
+.topi__bottom-right svg {
+  width: 93px;
+  height: 94px;
+}
+
+.topi-slide__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topi-slide__image {
+  margin-top: 8.375rem;
+  width: 600px !important;
+  height: 800px;
+}
+
+.topi-slide__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.topi-slide__block {
+  margin-top: 12.625rem;
+  max-width: 560px;
+}
+
+.block-topi__label {
+  margin-top: 1.5625rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.block-topi__text {
+  margin-top: 1.25rem;
+  line-height: 1.5;
+}
+
+.block-topi__text p {
+  margin-bottom: 1.25rem;
+}
+
+.block-topi__text p:last-child {
+  margin-bottom: 0rem;
+}
+
+.ratem-swiper-button-next-center,
+.ratem-swiper-button-prev-center {
+  top: 50% !important;
+}
+
+.recipes {
+  background-color: #D0F4A5;
+  position: relative;
+  margin-top: 0rem;
+}
+
+.recipes__topborder {
+  width: 100%;
+  height: 22px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: -0.9375rem;
+}
+
+.recipes__topborder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.recipes__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.recipes__back svg {
+  width: 100%;
+  height: 100%;
+}
+
+.recipes__top-left {
+  position: absolute;
+  top: 0;
+  left: -450px;
+  width: 717px;
+  height: 491px;
+  z-index: 2;
+}
+
+.recipes__top-left svg {
+  width: 717px;
+  height: 491px;
+}
+
+.recipes__bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 205px;
+  height: 141px;
+}
+
+.recipes__bottom-left svg {
+  width: 205px;
+  height: 141px;
+}
+
+.recipes__top-right {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 66px;
+  height: 144px;
+}
+
+.recipes__top-right svg {
+  width: 66px;
+  height: 144px;
+}
+
+.recipes__bottom-tree {
+  position: absolute;
+  bottom: -130px;
+  left: 40px;
+  width: 231px;
+  height: 159px;
+}
+
+.recipes__bottom-tree svg {
+  width: 231px;
+  height: 159px;
+}
+
+.recipes__body {
+  position: relative;
+  padding-top: 10.3125rem;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+  z-index: 4;
+}
+
+.recipes__title {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
 /**
  * Swiper 7.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -3255,6 +3480,16 @@ button.swiper-pagination-bullet {
     height: 75px;
   }
 
+  .ratem-swiper-button-prev-center,
+  .swiper-rtl .ratem-swiper-button-next-center {
+    left: 50px !important;
+  }
+
+  .ratem-swiper-button-next-center,
+  .swiper-rtl .ratem-swiper-button-prev-center {
+    right: 50px !important;
+  }
+
   .footer {
     margin-top: -0.375rem;
   }
@@ -3695,6 +3930,30 @@ button.swiper-pagination-bullet {
   .body-tabs__title {
     margin-top: 5.625rem;
   }
+
+  .topi__body {
+    padding-bottom: 1.875rem;
+  }
+
+  .topi-slide__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3.125rem;
+  }
+
+  .topi-slide__image {
+    width: 400px !important;
+    height: 600px;
+  }
+
+  .topi-slide__block {
+    margin-top: 0rem;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -3750,6 +4009,16 @@ button.swiper-pagination-bullet {
   .ratem-swiper-button-next,
   .swiper-rtl .ratem-swiper-button-prev {
     right: 100px !important;
+  }
+
+  .ratem-swiper-button-prev-center,
+  .swiper-rtl .ratem-swiper-button-next-center {
+    left: 0px !important;
+  }
+
+  .ratem-swiper-button-next-center,
+  .swiper-rtl .ratem-swiper-button-prev-center {
+    right: 0px !important;
   }
 
   .icon-menu {
@@ -4373,6 +4642,48 @@ button.swiper-pagination-bullet {
     width: 263px;
     height: 199px;
   }
+
+  .topi__bottom-left {
+    width: 104px;
+    height: 71px;
+  }
+
+  .topi__bottom-left svg {
+    width: 104px;
+    height: 71px;
+  }
+
+  .topi__bottom-right {
+    width: 61px;
+    height: 61px;
+  }
+
+  .topi__bottom-right svg {
+    width: 61px;
+    height: 61px;
+  }
+
+  .topi-slide__image {
+    width: 252px;
+    height: 332px;
+  }
+
+  .topi-slide__block {
+    margin-top: 1.875rem;
+  }
+
+  .ratem-swiper-button-next-center,
+  .ratem-swiper-button-prev-center {
+    top: 500px !important;
+  }
+
+  .recipes {
+    display: none;
+  }
+
+  .recipes__topborder {
+    display: none;
+  }
 }
 
 @media (max-width: 40.625em) {
@@ -4481,6 +4792,16 @@ button.swiper-pagination-bullet {
 
   .ratem-swiper-button-next,
   .swiper-rtl .ratem-swiper-button-prev {
+    right: 0 !important;
+  }
+
+  .ratem-swiper-button-prev-center,
+  .swiper-rtl .ratem-swiper-button-next-center {
+    left: 0 !important;
+  }
+
+  .ratem-swiper-button-next-center,
+  .swiper-rtl .ratem-swiper-button-prev-center {
     right: 0 !important;
   }
 
