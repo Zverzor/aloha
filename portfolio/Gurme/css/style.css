@@ -443,6 +443,21 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #fff;
+  position: relative;
+}
+
+.cat-header__body::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #df5384;
+}
+
+.cat-header__body.last::before {
+  left: auto;
+  right: 30px;
 }
 
 .cat-header__list {
@@ -1593,6 +1608,21 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #fff;
+  position: relative;
+}
+
+.cat-header__body::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 30px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #df5384;
+}
+
+.cat-header__body.last::before {
+  left: auto;
+  right: 30px;
 }
 
 .cat-header__list {
