@@ -3457,8 +3457,7 @@
             lazy: true,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
-                dynamicBullets: true
+                clickable: true
             },
             navigation: {
                 prevEl: ".left-slider-stocks-bnt-prev",
@@ -3478,6 +3477,43 @@
             navigation: {
                 prevEl: ".specialprice-bnt-prev",
                 nextEl: ".specialprice-bnt-next"
+            },
+            on: {}
+        });
+        if (document.querySelector(".mans-slider")) new core(".mans-slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 4,
+            spaceBetween: 0,
+            autoHeight: true,
+            speed: 800,
+            lazy: true,
+            navigation: {
+                prevEl: ".mans-slider-bnt-prev",
+                nextEl: ".mans-slider-bnt-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+                548: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 200
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                1268: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
             },
             on: {}
         });
@@ -3504,6 +3540,21 @@
             menuIcon.classList.remove("open");
             menuBody.classList.remove("active");
         }
+    }));
+    const tabsContainer = document.querySelectorAll(".mans__tab-block");
+    tabsContainer.forEach(((container, i) => {
+        const tabsTitles = container.querySelectorAll("[data-tabs-title]");
+        const tabsContents = container.querySelectorAll("[data-tab-content]");
+        const mainSlider = container.querySelector("[data-tab-content-main]");
+        tabsTitles.forEach(((title, i) => {
+            title.addEventListener("click", (() => {
+                tabsContents.forEach((content => {
+                    content.classList.add("hide");
+                }));
+                tabsContents[i].classList.remove("hide");
+                mainSlider.classList.add("hide");
+            }));
+        }));
     }));
     window["FLS"] = true;
     isWebp();
