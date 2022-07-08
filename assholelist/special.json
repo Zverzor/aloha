@@ -1,0 +1,21 @@
+{
+    "url": "http://192.168.1.3:8080",
+    "boolean": "false",
+    "websites": [
+        {
+            "name": "ЧФ3",
+            "url": "http://192.168.1.3:8080",
+            "boolean": "true"
+        },
+        {
+            "name": "vk",
+            "url": "http://vk.com",
+            "boolean": "true"
+        },
+        {
+            "name": "google",
+            "url": "http://google.com",
+            "boolean": "true"
+        }
+    ]
+}
